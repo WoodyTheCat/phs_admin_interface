@@ -1,0 +1,48 @@
+@use "../partials/variables.scss" as v;
+
+.app-layout {
+  display: grid;
+  width: 100dvw;
+  height: 100dvh;
+  grid-template-columns: v.$sidebar-width 1fr;
+
+  .app-sidebar {
+    display: flex;
+    padding: 5px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: column;
+
+    background: v.$bg;
+
+    border-right: 1px solid v.$border;
+
+    &__nav {
+      display: flex;
+      align-items: flex-start;
+
+      flex-grow: 1;
+      flex-direction: column;
+      row-gap: v.$spacing-sm;
+
+      justify-content: flex-start;
+      margin-top: v.$spacing-base;
+      margin-bottom: v.$spacing-base;
+
+      a {
+        color: v.$text;
+      }
+
+      a.active {
+        border-style: solid;
+        border-width: 2px;
+        border-color: v.$text;
+      }
+    }
+  }
+
+  .app-body {
+    display: block;
+  }
+}

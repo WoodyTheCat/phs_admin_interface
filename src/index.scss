@@ -1,0 +1,95 @@
+/* @use "partials/variables.scss" as v; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+@layer base {
+  :root {
+    --background: 355 12% 95%;
+    --foreground: 355 5% 10%;
+    --card: 355 12% 94%;
+    --card-foreground: 355 5% 15%;
+    --popover: 355 12% 95%;
+    --popover-foreground: 355 95% 10%;
+    --primary: 355 60.8% 38%;
+    --text-primary: 0 0% 100%;
+    --secondary: 3.23 26% 93%;
+    --text-secondary: 0 0% 0%;
+    --muted: 317 12% 94%;
+    --muted-foreground: 355 5% 40%;
+    --accent: 317 12% 90%;
+    --accent-foreground: 355 5% 15%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 355 5% 94%;
+    --border: 355 20% 82%;
+    --input: 355 20% 50%;
+    --ring: 355 60.8% 38%;
+    --radius: 0.5rem;
+  }
+  /* :root {
+    --background: 355 12% 95%;
+    --foreground: 355 5% 10%;
+    --card: 355 12% 94%;
+    --card-foreground: 355 5% 15%;
+    --popover: 355 12% 95%;
+    --popover-foreground: 355 95% 10%;
+    --primary: 355 60.8% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 355 12% 90%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 317 12% 94%;
+    --muted-foreground: 355 5% 40%;
+    --accent: 317 12% 90%;
+    --accent-foreground: 355 5% 15%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 355 5% 94%;
+    --border: 355 20% 82%;
+    --input: 355 20% 50%;
+    --ring: 355 60.8% 38%;
+    --radius: 0.5rem;
+  } */
+
+  /* .dark {
+    --background: 355 12% 10%;
+    --foreground: 355 5% 94%;
+    --card: 355 12% 10%;
+    --card-foreground: 355 5% 94%;
+    --popover: 355 12% 5%;
+    --popover-foreground: 355 5% 94%;
+    --primary: 355 60.8% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 355 12% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 317 12% 25%;
+    --muted-foreground: 355 5% 65%;
+    --accent: 317 12% 25%;
+    --accent-foreground: 355 5% 94%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 355 5% 94%;
+    --border: 355 20% 50%;
+    --input: 355 20% 50%;
+    --ring: 355 60.8% 38%;
+    --radius: 0.5rem;
+  } */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
