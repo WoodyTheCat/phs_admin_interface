@@ -172,7 +172,7 @@ export const Canvas = () => {
         </div>
         <div
           className={cn(
-            "items-center flex h-full justify-center transition-opacity duration-[250ms] ease-out opacity-0",
+            "items-center flex h-full justify-center transition-opacity duration-1000 ease-out opacity-0",
             showLoader && "opacity-100",
             ready && showLoader && "opacity-0 h-0 transition-none",
           )}
